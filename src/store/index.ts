@@ -9,7 +9,7 @@ import { rootReducer } from './rootReducer';
 import { rootSaga } from './rootSaga';
 
 const loggerMiddleware = createLogger({
-  collapsed: true
+  collapsed: true,
 });
 
 const sagaMiddleware = createSagaMiddleware();
@@ -25,7 +25,7 @@ const store = createStore(
     sagaMiddleware,
     axiosMiddleware(client),
     thunkMiddleware,
-    loggerMiddleware
+    loggerMiddleware,
   ),
 );
 

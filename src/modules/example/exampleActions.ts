@@ -3,7 +3,7 @@ export const TEST_ACTION = `${namespace}/TEST_ACTION`;
 
 /**
  * Axios payload example.
- * 
+ *
  * payload: {
  *   request: {
  *      method: 'post',

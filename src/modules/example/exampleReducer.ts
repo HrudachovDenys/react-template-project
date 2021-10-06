@@ -19,7 +19,7 @@ const exampleReducer = (state: IState = initialState, action: IAction) => {
   switch (action.type) {
     /**
      * Example use axios action.
-     * 
+     *
      * case `${EXAMPLE_AXIOS}_SUCCESS`:
      * case `${EXAMPLE_AXIOS}_FAIL`:
      */

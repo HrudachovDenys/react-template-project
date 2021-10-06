@@ -1,5 +1,6 @@
-
-import { get, set, flow, clone, toPairs, reduce } from 'lodash';
+import {
+  get, set, flow, clone, toPairs, reduce,
+} from 'lodash';
 
 export const colorScheme = {
   black: { value: '#222222', name: 'Black' },
@@ -11,8 +12,8 @@ export const getColor = (colorKey: string): string => get(colorScheme, [colorKey
 const getColorsMap = () => flow([
   clone,
   toPairs,
-  x => reduce(x, (acc: any, [key, scheme]: any) => set(acc, key, scheme.value), {})
-])(colorScheme)
+  (x) => reduce(x, (acc: any, [key, scheme]: any) => set(acc, key, scheme.value), {}),
+])(colorScheme);
 
 const colors = getColorsMap();
 

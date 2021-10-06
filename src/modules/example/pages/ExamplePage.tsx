@@ -11,15 +11,15 @@ const ExamplePage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(ExampleActions.testAction('Hello Redux!!!'))
-  }, [dispatch])
+    dispatch(ExampleActions.testAction('Hello Redux!!!'));
+  }, [dispatch]);
 
   return (
     <PageWrapper>
       <span>{exampleMessageFromStore}</span>
     </PageWrapper>
   );
-}
+};
 
 const PageWrapper = styled.div`
   min-height: 100vh;
