@@ -1,7 +1,6 @@
 import { get, set, clone } from 'lodash';
 
 import { IAction } from '@common/models/redux.model';
-
 import { getRestPayload } from '@common/utils/redux.helpers';
 
 import { TEST_ACTION } from './exampleActions';
